@@ -1,0 +1,36 @@
+﻿<Window x:Class="Chess_Engine.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Chess_Engine"
+        mc:Ignorable="d"
+        Title="MainMenu" Height="600" Width="900"
+        Background="{StaticResource EvenTile}">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.ColumnSpan="3" Text="Chess" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="60px"/>
+
+        <StackPanel HorizontalAlignment="Stretch" Grid.Column="1" Grid.Row="2">
+            <Button x:Name="Help" Content="Help" Width="180" Height="40" FontSize="20px" Click="Help_Click" Margin="5"/>
+            <Button x:Name="Start" Content="Start" Width="180" Height="40" FontSize="20px" Click="Start_Click" Margin="5"/>
+        </StackPanel>
+
+        <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Center" Grid.Column="1" Grid.Row="1">
+            <TextBlock Text="Difficulty" HorizontalAlignment="Center" FontSize="26"/>
+            <Slider Width="200" Height="20" Margin="20" ValueChanged="Slider_ValueChanged" x:Name="Slider" Minimum="1" Maximum="5" Value="1" SmallChange="1" IsSnapToTickEnabled="True"/>
+            <CheckBox x:Name="CBox" Content="Use Quiscence Searching" Margin="20" Width="200" Checked="CheckBox_Checked"/>
+        </StackPanel>
+    </Grid>
+</Window>

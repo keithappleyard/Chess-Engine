@@ -1,0 +1,400 @@
+﻿<Window x:Class="Chess_Engine.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Chess_Engine"
+        mc:Ignorable="d"
+        ResizeMode="CanResize"
+        Title="MainWindow" Height="600" Width="900">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition  Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid>
+            <Border BorderThickness="50" BorderBrush="{StaticResource BoardOutLine}">
+                <Grid x:Name="Squares">
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <!-- Row 0 -->
+                    <Grid Grid.Row="0" Grid.Column="0" Background="{StaticResource OddTile}">
+                        <Button Style="{StaticResource MyButton}" IsEnabled="True" Click="Button_Click">
+                            <Image Source="{x:Null}" Stretch="Fill"/>
+                        </Button>
+                    </Grid>
+                    <Grid Grid.Row="0" Grid.Column="1" Background="{StaticResource EvenTile}">
+                        <Button Style="{StaticResource MyButton}" IsEnabled="True" Click="Button_Click">
+                            <Image Source="{x:Null}" Stretch="Fill"/>
+                        </Button>
+                    </Grid>
+                    <Grid Grid.Row="0" Grid.Column="2" Background="{StaticResource OddTile}">
+                        <Button Style="{StaticResource MyButton}" IsEnabled="True" Click="Button_Click">
+                            <Image Source="{x:Null}" Stretch="Fill"/>
+                        </Button>
+                    </Grid>
+                    <Grid Grid.Row="0" Grid.Column="3" Background="{StaticResource EvenTile}">
+                        <Button Style="{StaticResource MyButton}" IsEnabled="True" Click="Button_Click">
+                            <Image Source="{x:Null}" Stretch="Fill"/>
+                        </Button>
+                    </Grid>
+                    <Grid Grid.Row="0" Grid.Column="4" Background="{StaticResource OddTile}">
+                        <Button Style="{StaticResource MyButton}" IsEnabled="True" Click="Button_Click">
+                            <Image Source="{x:Null}" Stretch="Fill"/>
+                        </Button>
+                    </Grid>
+                    <Grid Grid.Row="0" Grid.Column="5" Background="{StaticResource EvenTile}">
+                        <Button Style="{StaticResource MyButton}" IsEnabled="True" Click="Button_Click">
+                            <Image Source="{x:Null}" Stretch="Fill"/>
+                        </Button>
+                    </Grid>
+                    <Grid Grid.Row="0" Grid.Column="6" Background="{StaticResource OddTile}">
+                        <Button Style="{StaticResource MyButton}" IsEnabled="True" Click="Button_Click">
+                            <Image Source="{x:Null}" Stretch="Fill"/>
+                        </Button>
+                    </Grid>
+                    <Grid Grid.Row="0" Grid.Column="7" Background="{StaticResource EvenTile}">
+                        <Button Style="{StaticResource MyButton}" IsEnabled="True" Click="Button_Click">
+                            <Image Source="{x:Null}" Stretch="Fill"/>
+                        </Button>
+                    </Grid>
+
+                    <!-- Row 1 -->
+                    <Grid Grid.Row="1" Grid.Column="0" Background="{StaticResource EvenTile}">
+                        <Button Style="{StaticResource MyButton}" IsEnabled="True" Click="Button_Click">
+                            <Image Source="{x:Null}" Stretch="Fill"/>
+                        </Button>
+                    </Grid>
+                    <Grid Grid.Row="1" Grid.Column="1" Background="{StaticResource OddTile}">
+                        <Button Style="{StaticResource MyButton}" IsEnabled="True" Click="Button_Click">
+                            <Image Source="{x:Null}" Stretch="Fill"/>
+                        </Button>
+                    </Grid>
+                    <Grid Grid.Row="1" Grid.Column="2" Background="{StaticResource EvenTile}">
+                        <Button Style="{StaticResource MyButton}" IsEnabled="True" Click="Button_Click">
+                            <Image Source="{x:Null}" Stretch="Fill"/>
+                        </Button>
+                    </Grid>
+                    <Grid Grid.Row="1" Grid.Column="3" Background="{StaticResource OddTile}">
+                        <Button Style="{StaticResource MyButton}" IsEnabled="True" Click="Button_Click">
+                            <Image Source="{x:Null}" Stretch="Fill"/>
+                        </Button>
+                    </Grid>
+                    <Grid Grid.Row="1" Grid.Column="4" Background="{StaticResource EvenTile}">
+                        <Button Style="{StaticResource MyButton}" IsEnabled="True" Click="Button_Click">
+                            <Image Source="{x:Null}" Stretch="Fill"/>
+                        </Button>
+                    </Grid>
+                    <Grid Grid.Row="1" Grid.Column="5" Background="{StaticResource OddTile}">
+                        <Button Style="{StaticResource MyButton}" IsEnabled="True" Click="Button_Click">
+                            <Image Source="{x:Null}" Stretch="Fill"/>
+                        </Button>
+                    </Grid>
+                    <Grid Grid.Row="1" Grid.Column="6" Background="{StaticResource EvenTile}">
+                        <Button Style="{StaticResource MyButton}" IsEnabled="True" Click="Button_Click">
+                            <Image Source="{x:Null}" Stretch="Fill"/>
+                        </Button>
+                    </Grid>
+                    <Grid Grid.Row="1" Grid.Column="7" Background="{StaticResource OddTile}">
+                        <Button Style="{StaticResource MyButton}" IsEnabled="True" Click="Button_Click">
+                            <Image Source="{x:Null}" Stretch="Fill"/>
+                        </Button>
+                    </Grid>
+
+                    <!-- Row 2 -->
+                    <Grid Grid.Row="2" Grid.Column="0" Background="{StaticResource OddTile}">
+                        <Button Style="{StaticResource MyButton}" IsEnabled="True" Click="Button_Click">
+                            <Image Source="{x:Null}" Stretch="Fill"/>
+                        </Button>
+                    </Grid>
+                    <Grid Grid.Row="2" Grid.Column="1" Background="{StaticResource EvenTile}">
+                        <Button Style="{StaticResource MyButton}" IsEnabled="True" Click="Button_Click">
+                            <Image Source="{x:Null}" Stretch="Fill"/>
+                        </Button>
+                    </Grid>
+                    <Grid Grid.Row="2" Grid.Column="2" Background="{StaticResource OddTile}">
+                        <Button Style="{StaticResource MyButton}" IsEnabled="True" Click="Button_Click">
+                            <Image Source="{x:Null}" Stretch="Fill"/>
+                        </Button>
+                    </Grid>
+                    <Grid Grid.Row="2" Grid.Column="3" Background="{StaticResource EvenTile}">
+                        <Button Style="{StaticResource MyButton}" IsEnabled="True" Click="Button_Click">
+                            <Image Source="{x:Null}" Stretch="Fill"/>
+                        </Button>
+                    </Grid>
+                    <Grid Grid.Row="2" Grid.Column="4" Background="{StaticResource OddTile}">
+                        <Button Style="{StaticResource MyButton}" IsEnabled="True" Click="Button_Click">
+                            <Image Source="{x:Null}" Stretch="Fill"/>
+                        </Button>
+                    </Grid>
+                    <Grid Grid.Row="2" Grid.Column="5" Background="{StaticResource EvenTile}">
+                        <Button Style="{StaticResource MyButton}" IsEnabled="True" Click="Button_Click">
+                            <Image Source="{x:Null}" Stretch="Fill"/>
+                        </Button>
+                    </Grid>
+                    <Grid Grid.Row="2" Grid.Column="6" Background="{StaticResource OddTile}">
+                        <Button Style="{StaticResource MyButton}" IsEnabled="True" Click="Button_Click">
+                            <Image Source="{x:Null}" Stretch="Fill"/>
+                        </Button>
+                    </Grid>
+                    <Grid Grid.Row="2" Grid.Column="7" Background="{StaticResource EvenTile}">
+                        <Button Style="{StaticResource MyButton}" IsEnabled="True" Click="Button_Click">
+                            <Image Source="{x:Null}" Stretch="Fill"/>
+                        </Button>
+                    </Grid>
+
+                    <!-- Row 3 -->
+                    <Grid Grid.Row="3" Grid.Column="0" Background="{StaticResource EvenTile}">
+                        <Button Style="{StaticResource MyButton}" IsEnabled="True" Click="Button_Click">
+                            <Image Source="{x:Null}" Stretch="Fill"/>
+                        </Button>
+                    </Grid>
+                    <Grid Grid.Row="3" Grid.Column="1" Background="{StaticResource OddTile}">
+                        <Button Style="{StaticResource MyButton}" IsEnabled="True" Click="Button_Click">
+                            <Image Source="{x:Null}" Stretch="Fill"/>
+                        </Button>
+                    </Grid>
+                    <Grid Grid.Row="3" Grid.Column="2" Background="{StaticResource EvenTile}">
+                        <Button Style="{StaticResource MyButton}" IsEnabled="True" Click="Button_Click">
+                            <Image Source="{x:Null}" Stretch="Fill"/>
+                        </Button>
+                    </Grid>
+                    <Grid Grid.Row="3" Grid.Column="3" Background="{StaticResource OddTile}">
+                        <Button Style="{StaticResource MyButton}" IsEnabled="True" Click="Button_Click">
+                            <Image Source="{x:Null}" Stretch="Fill"/>
+                        </Button>
+                    </Grid>
+                    <Grid Grid.Row="3" Grid.Column="4" Background="{StaticResource EvenTile}">
+                        <Button Style="{StaticResource MyButton}" IsEnabled="True" Click="Button_Click">
+                            <Image Source="{x:Null}" Stretch="Fill"/>
+                        </Button>
+                    </Grid>
+                    <Grid Grid.Row="3" Grid.Column="5" Background="{StaticResource OddTile}">
+                        <Button Style="{StaticResource MyButton}" IsEnabled="True" Click="Button_Click">
+                            <Image Source="{x:Null}" Stretch="Fill"/>
+                        </Button>
+                    </Grid>
+                    <Grid Grid.Row="3" Grid.Column="6" Background="{StaticResource EvenTile}">
+                        <Button Style="{StaticResource MyButton}" IsEnabled="True" Click="Button_Click">
+                            <Image Source="{x:Null}" Stretch="Fill"/>
+                        </Button>
+                    </Grid>
+                    <Grid Grid.Row="3" Grid.Column="7" Background="{StaticResource OddTile}">
+                        <Button Style="{StaticResource MyButton}" IsEnabled="True" Click="Button_Click">
+                            <Image Source="{x:Null}" Stretch="Fill"/>
+                        </Button>
+                    </Grid>
+
+                    <!-- Row 4 -->
+                    <Grid Grid.Row="4" Grid.Column="0" Background="{StaticResource OddTile}">
+                        <Button Style="{StaticResource MyButton}" IsEnabled="True" Click="Button_Click">
+                            <Image Source="{x:Null}" Stretch="Fill"/>
+                        </Button>
+                    </Grid>
+                    <Grid Grid.Row="4" Grid.Column="1" Background="{StaticResource EvenTile}">
+                        <Button Style="{StaticResource MyButton}" IsEnabled="True" Click="Button_Click">
+                            <Image Source="{x:Null}" Stretch="Fill"/>
+                        </Button>
+                    </Grid>
+                    <Grid Grid.Row="4" Grid.Column="2" Background="{StaticResource OddTile}">
+                        <Button Style="{StaticResource MyButton}" IsEnabled="True" Click="Button_Click">
+                            <Image Source="{x:Null}" Stretch="Fill"/>
+                        </Button>
+                    </Grid>
+                    <Grid Grid.Row="4" Grid.Column="3" Background="{StaticResource EvenTile}">
+                        <Button Style="{StaticResource MyButton}" IsEnabled="True" Click="Button_Click">
+                            <Image Source="{x:Null}" Stretch="Fill"/>
+                        </Button>
+                    </Grid>
+                    <Grid Grid.Row="4" Grid.Column="4" Background="{StaticResource OddTile}">
+                        <Button Style="{StaticResource MyButton}" IsEnabled="True" Click="Button_Click">
+                            <Image Source="{x:Null}" Stretch="Fill"/>
+                        </Button>
+                    </Grid>
+                    <Grid Grid.Row="4" Grid.Column="5" Background="{StaticResource EvenTile}">
+                        <Button Style="{StaticResource MyButton}" IsEnabled="True" Click="Button_Click">
+                            <Image Source="{x:Null}" Stretch="Fill"/>
+                        </Button>
+                    </Grid>
+                    <Grid Grid.Row="4" Grid.Column="6" Background="{StaticResource OddTile}">
+                        <Button Style="{StaticResource MyButton}" IsEnabled="True" Click="Button_Click">
+                            <Image Source="{x:Null}" Stretch="Fill"/>
+                        </Button>
+                    </Grid>
+                    <Grid Grid.Row="4" Grid.Column="7" Background="{StaticResource EvenTile}">
+                        <Button Style="{StaticResource MyButton}" IsEnabled="True" Click="Button_Click">
+                            <Image Source="{x:Null}" Stretch="Fill"/>
+                        </Button>
+                    </Grid>
+
+                    <!-- Row 5 -->
+                    <Grid Grid.Row="5" Grid.Column="0" Background="{StaticResource EvenTile}">
+                        <Button Style="{StaticResource MyButton}" IsEnabled="True" Click="Button_Click">
+                            <Image Source="{x:Null}" Stretch="Fill"/>
+                        </Button>
+                    </Grid>
+                    <Grid Grid.Row="5" Grid.Column="1" Background="{StaticResource OddTile}">
+                        <Button Style="{StaticResource MyButton}" IsEnabled="True" Click="Button_Click">
+                            <Image Source="{x:Null}" Stretch="Fill"/>
+                        </Button>
+                    </Grid>
+                    <Grid Grid.Row="5" Grid.Column="2" Background="{StaticResource EvenTile}">
+                        <Button Style="{StaticResource MyButton}" IsEnabled="True" Click="Button_Click">
+                            <Image Source="{x:Null}" Stretch="Fill"/>
+                        </Button>
+                    </Grid>
+                    <Grid Grid.Row="5" Grid.Column="3" Background="{StaticResource OddTile}">
+                        <Button Style="{StaticResource MyButton}" IsEnabled="True" Click="Button_Click">
+                            <Image Source="{x:Null}" Stretch="Fill"/>
+                        </Button>
+                    </Grid>
+                    <Grid Grid.Row="5" Grid.Column="4" Background="{StaticResource EvenTile}">
+                        <Button Style="{StaticResource MyButton}" IsEnabled="True" Click="Button_Click">
+                            <Image Source="{x:Null}" Stretch="Fill"/>
+                        </Button>
+                    </Grid>
+                    <Grid Grid.Row="5" Grid.Column="5" Background="{StaticResource OddTile}">
+                        <Button Style="{StaticResource MyButton}" IsEnabled="True" Click="Button_Click">
+                            <Image Source="{x:Null}" Stretch="Fill"/>
+                        </Button>
+                    </Grid>
+                    <Grid Grid.Row="5" Grid.Column="6" Background="{StaticResource EvenTile}">
+                        <Button Style="{StaticResource MyButton}" IsEnabled="True" Click="Button_Click">
+                            <Image Source="{x:Null}" Stretch="Fill"/>
+                        </Button>
+                    </Grid>
+                    <Grid Grid.Row="5" Grid.Column="7" Background="{StaticResource OddTile}">
+                        <Button Style="{StaticResource MyButton}" IsEnabled="True" Click="Button_Click">
+                            <Image Source="{x:Null}" Stretch="Fill"/>
+                        </Button>
+                    </Grid>
+
+                    <!-- Row 6 -->
+                    <Grid Grid.Row="6" Grid.Column="0" Background="{StaticResource OddTile}">
+                        <Button Style="{StaticResource MyButton}" IsEnabled="True" Click="Button_Click">
+                            <Image Source="{x:Null}" Stretch="Fill"/>
+                        </Button>
+                    </Grid>
+                    <Grid Grid.Row="6" Grid.Column="1" Background="{StaticResource EvenTile}">
+                        <Button Style="{StaticResource MyButton}" IsEnabled="True" Click="Button_Click">
+                            <Image Source="{x:Null}" Stretch="Fill"/>
+                        </Button>
+                    </Grid>
+                    <Grid Grid.Row="6" Grid.Column="2" Background="{StaticResource OddTile}">
+                        <Button Style="{StaticResource MyButton}" IsEnabled="True" Click="Button_Click">
+                            <Image Source="{x:Null}" Stretch="Fill"/>
+                        </Button>
+                    </Grid>
+                    <Grid Grid.Row="6" Grid.Column="3" Background="{StaticResource EvenTile}">
+                        <Button Style="{StaticResource MyButton}" IsEnabled="True" Click="Button_Click">
+                            <Image Source="{x:Null}" Stretch="Fill"/>
+                        </Button>
+                    </Grid>
+                    <Grid Grid.Row="6" Grid.Column="4" Background="{StaticResource OddTile}">
+                        <Button Style="{StaticResource MyButton}" IsEnabled="True" Click="Button_Click">
+                            <Image Source="{x:Null}" Stretch="Fill"/>
+                        </Button>
+                    </Grid>
+                    <Grid Grid.Row="6" Grid.Column="5" Background="{StaticResource EvenTile}">
+                        <Button Style="{StaticResource MyButton}" IsEnabled="True" Click="Button_Click">
+                            <Image Source="{x:Null}" Stretch="Fill"/>
+                        </Button>
+                    </Grid>
+                    <Grid Grid.Row="6" Grid.Column="6" Background="{StaticResource OddTile}">
+                        <Button Style="{StaticResource MyButton}" IsEnabled="True" Click="Button_Click">
+                            <Image Source="{x:Null}" Stretch="Fill"/>
+                        </Button>
+                    </Grid>
+                    <Grid Grid.Row="6" Grid.Column="7" Background="{StaticResource EvenTile}">
+                        <Button Style="{StaticResource MyButton}" IsEnabled="True" Click="Button_Click">
+                            <Image Source="{x:Null}" Stretch="Fill"/>
+                        </Button>
+                    </Grid>
+
+                    <!-- Row 7 -->
+                    <Grid Grid.Row="7" Grid.Column="0" Background="{StaticResource EvenTile}">
+                        <Button Style="{StaticResource MyButton}" IsEnabled="True" Click="Button_Click">
+                            <Image Source="{x:Null}" Stretch="Fill"/>
+                        </Button>
+                    </Grid>
+                    <Grid Grid.Row="7" Grid.Column="1" Background="{StaticResource OddTile}">
+                        <Button Style="{StaticResource MyButton}" IsEnabled="True" Click="Button_Click">
+                            <Image Source="{x:Null}" Stretch="Fill"/>
+                        </Button>
+                    </Grid>
+                    <Grid Grid.Row="7" Grid.Column="2" Background="{StaticResource EvenTile}">
+                        <Button Style="{StaticResource MyButton}" IsEnabled="True" Click="Button_Click">
+                            <Image Source="{x:Null}" Stretch="Fill"/>
+                        </Button>
+                    </Grid>
+                    <Grid Grid.Row="7" Grid.Column="3" Background="{StaticResource OddTile}">
+                        <Button Style="{StaticResource MyButton}" IsEnabled="True" Click="Button_Click">
+                            <Image Source="{x:Null}" Stretch="Fill"/>
+                        </Button>
+                    </Grid>
+                    <Grid Grid.Row="7" Grid.Column="4" Background="{StaticResource EvenTile}">
+                        <Button Style="{StaticResource MyButton}" IsEnabled="True" Click="Button_Click">
+                            <Image Source="{x:Null}" Stretch="Fill"/>
+                        </Button>
+                    </Grid>
+                    <Grid Grid.Row="7" Grid.Column="5" Background="{StaticResource OddTile}">
+                        <Button Style="{StaticResource MyButton}" IsEnabled="True" Click="Button_Click">
+                            <Image Source="{x:Null}" Stretch="Fill"/>
+                        </Button>
+                    </Grid>
+                    <Grid Grid.Row="7" Grid.Column="6" Background="{StaticResource EvenTile}">
+                        <Button Style="{StaticResource MyButton}" IsEnabled="True" Click="Button_Click">
+                            <Image Source="{x:Null}" Stretch="Fill"/>
+                        </Button>
+                    </Grid>
+                    <Grid Grid.Row="7" Grid.Column="7" Background="{StaticResource OddTile}">
+                        <Button Style="{StaticResource MyButton}" IsEnabled="True" Click="Button_Click">
+                            <Image Source="{x:Null}" Stretch="Fill"/>
+                        </Button>
+                    </Grid>
+                </Grid>
+            </Border>
+        </Grid>
+        <StackPanel Grid.Column="2" Background="{StaticResource EvenTile}">
+            <StackPanel>
+                <ScrollViewer Height="415" Width="270" Margin="0 20 0 0">
+                    <TextBlock x:Name="MoveLog" FontSize="14" Padding="5" Background="LightGray" TextWrapping="Wrap" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.CanContentScroll="True"/>
+                </ScrollViewer>
+            </StackPanel>
+            <Button Height="50" Margin="5" FontSize=" 30" Click="Ai_Move" Width="270">
+                AI Move
+            </Button>
+            <Button Height="50" Margin="5" FontSize=" 30" Click="Undo_Button" Width="270">
+                Undo
+            </Button>
+        </StackPanel>
+        <StackPanel x:Name="CheckMateScreen" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.ColumnSpan="2" Grid.RowSpan="2" Background="{StaticResource EvenTile}" Height="360" Width="320" Visibility="Hidden" IsEnabled="False">
+            <TextBlock Text="CheckMate!" FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="20" FontWeight="Regular"/>
+            <Button Height="60" Width="220" Margin="0,60,0,0" Content="Play Again" FontSize="32" FontWeight="Medium" Click="Restart"/>
+            <Button Height="60" Width="220" Margin="0,20,0,0" Content="Leave" FontSize="32" FontWeight="Medium" Click="Leave"/>
+        </StackPanel>
+        <StackPanel x:Name="DrawScreen" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.ColumnSpan="2" Grid.RowSpan="2" Background="{StaticResource EvenTile}" Height="360" Width="320" Visibility="Hidden" IsEnabled="False">
+            <TextBlock Text="You Drew!" FontSize="56" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="20" FontWeight="Regular"/>
+            <Button Height="60" Width="220" Margin="0,60,0,0" Content="Play Again" FontSize="32" FontWeight="Medium" Click="Restart"/>
+            <Button Height="60" Width="220" Margin="0,20,0,0" Content="Leave" FontSize="32" FontWeight="Medium" Click="Leave"/>
+        </StackPanel>
+    </Grid>
+</Window>
