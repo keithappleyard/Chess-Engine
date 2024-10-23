@@ -1,6 +1,6 @@
 ## About the project
 
-This is a project where I made a chess engine using C# and a GUI with WPF that has customisable settings for the AI player.
+This is a project where I made a chess engine with the minimax algorithm using C# and a GUI with WPF that has customisable settings for the AI player.
 
 ## Image Credits
 
